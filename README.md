@@ -31,13 +31,13 @@ php artisan db:seed
 * mysql 11.8.3
 
 # ER図
-![alt text](<スクリーンショット 2026-04-02 201411.png>)
+![alt text](image.png)
 
 # URL
 * 商品一覧画面
 http://localhost/
 * 商品一覧画面_マイリスト
-http://localhost/?tab=mylist
+http://localhost/?tab=mylist&keyword=
 * 会員登録画面
 http://localhost/register
 * ログイン画面
@@ -47,7 +47,7 @@ http://localhost/item/{item_id}
 * 商品購入画面
 http://localhost/purchase/{item_id}
 * 送付先住所変更画面
-http://localhost/address/{idem_id}
+http://localhost/purchase/address/{item_id}
 * 商品出品画面
 http://localhost/sell
 * プロフィール画面
@@ -55,6 +55,6 @@ http://localhost/mypage
 * プロフィール編集画面
 http://localhost/mypage/profile
 * プロフィール画面_購入した商品一覧
-http://localhost/mypage?page=buy
+http://localhost/mypage?tab=buy
 * プロフィール画面_出品した商品一覧
-http://localhost/mypage?page=sell
+http://localhost/mypage?tab=sell

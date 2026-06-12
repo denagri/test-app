@@ -17,8 +17,8 @@ class CreateProductsTable extends Migration
             $table->id();
             $table->foreignId('sell_user_id')->constrained('users')->cascadeOnDelete();
             $table->string('name');
-            $table->string('image');
-            $table->string('brand');
+            $table->string('image_path');
+            $table->string('brand')->nullable();
             $table->integer('price');
             $table->text('explanation');
             $table->foreignId('condition_id')->constrained()->cascadeOnDelete();

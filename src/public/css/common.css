@@ -1,0 +1,59 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+.header{
+    width: 100vw;
+    height: 10%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+.header-logo{
+    width: 33%;
+}
+.header-search{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.search-box{
+    border: solid 1px black;
+    border-radius: 3px;
+    width: 100%;
+    height: 70%;
+}
+.header-button{
+    width: 34%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 70px;
+}
+.button{
+    color: white;
+}
+.log{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border: none;
+    padding: 0;
+    height: 100%;
+    font-size: 16px;
+}
+.mypage{
+    color: white;
+    text-decoration: none;
+}
+.listing{
+    color: black;
+    background-color: white;
+    border: solid 1px white;
+    border-radius: 3px;
+    text-decoration: none;
+    padding: 2px 20px;
+}

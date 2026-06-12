@@ -1,0 +1,124 @@
+.detail-box{
+    width: 95%;
+    height: 1702px;
+    display: flex;
+    margin-top: 3%;
+}
+.detail-image{
+    width: 690px;
+    height: 1704px;
+}
+.item-image{
+    width: 600px;
+    height: 600px;
+    margin: 36px 45px;
+}
+.item-main{
+    width: 690px;
+    height: 1704px;
+}
+.price-box{
+    display: flex;
+    align-items: flex-end;
+}
+.icon-box{
+    display: flex;
+}
+.good-box{
+    margin: 0 25px;
+}
+.good-btn{
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+.good-count{
+    text-align: center;
+}
+.comment-box{
+    margin: 0 25px;
+}
+.comment-count{
+    text-align: center;
+}
+.purchase-btn{
+    color: white;
+    background-color: #ff5555;
+    border: solid 1px #ff5555;
+    border-radius: 3px;
+    padding: 10px;
+    width: 100%;
+    margin: 30px 0 10px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+.item-category{
+    display: flex;
+    align-items: center;
+}
+.tag-group{
+    margin: 0 15px;
+}
+.category-tag{
+    background-color: #e5e5e5;
+    border: solid 1px #e5e5e5;
+    border-radius: 15px;
+    margin: 8px;
+    padding: 0 10px;
+}
+.item-condition{
+    display: flex;
+}
+.condition-kind{
+    text-align: center;
+    margin: 20px 0 20px 77px;
+}
+.comment{
+    color: grey;
+}
+.comment-list{
+    margin: 20px 0;
+}
+.comment-user{
+    display: flex;
+    margin: 20px 0
+}
+.profile-image{
+    border: solid 1px black;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+}
+.comment-content{
+    background-color: #e5e5e5;
+    border-radius: 3px;
+    border: solid 1px #e5e5e5;
+    padding: 10px;
+}
+.comment-input{
+    font-weight: bold;
+}
+.comment-btn{
+    color: white;
+    background-color: #ff5555;
+    border: solid 1px #ff5555;
+    border-radius: 3px;
+    padding: 10px;
+    width: 100%;
+    margin: 30px 0 10px;
+}
+.guest-comment-btn{
+    color: white;
+    background-color: #ff5555;
+    border: solid 1px #ff5555;
+    border-radius: 3px;
+    padding: 10px;
+    width: 100%;
+    margin: 30px 0 10px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}

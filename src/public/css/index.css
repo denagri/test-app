@@ -1,0 +1,50 @@
+.index-box{
+    border-bottom: 1px solid black;
+    height: 50px;
+    position: relative;
+}
+.icon-box{
+    position: absolute;
+    bottom: 0;
+}
+.recommend-icon{
+    margin: 0 150px;
+    text-align: bottom;
+    text-decoration: none;
+}
+.my-list-icon{
+    text-align: bottom;
+    text-decoration: none;
+}
+.active{
+    color: red;
+}
+.goods-box{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+a{
+    text-decoration: none;
+    width: 30%;
+    color: black;
+}
+.item-box{
+    margin: 15px;
+}
+.item-image{
+    width: 90%;
+    height: 200px;
+    object-fit: cover;
+}
+.item-info{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.sold-label{
+    color: red;
+    font-weight: bold;
+    flex-shrink: 0;
+}

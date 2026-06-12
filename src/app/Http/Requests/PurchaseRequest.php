@@ -13,7 +13,7 @@ class PurchaseRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,21 @@ class PurchaseRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'payment_id' => 'required',
+            'address_check' => 'required',
+        ];
+    }
+    protected function prepareForValidation()
+    {
+        $this->merge([
+            'address_check'=>auth()->user()->address ?'exists':null,
+        ]);
+    }
+    public function messages()
+    {
+        return [
+            'payment_id.required' => '支払方法を選択してください',
+            'address_check.required' => '住所を登録してください',
         ];
     }
 }

@@ -13,7 +13,7 @@ class AddressRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,20 @@ class AddressRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'name' =>'required|max:20',
+            'code' => 'required|regex:/^\d{3}-\d{4}$/',
+            'address' => 'required',
+            'building' => 'nullable',
+        ];
+    }
+    public function messages()
+    {
+        return[
+            'name.required' =>'ユーザー名を入力してください',
+            'name.max' =>'ユーザー名は20文字以内で入力してください',
+            'code.required' => '郵便番号を入力してください',
+            'code.regex' => '郵便番号はハイフン込みの8桁で入力してください',
+            'address.required' => '住所を入力してください'
         ];
     }
 }
