@@ -18,7 +18,10 @@ class DatabaseSeeder extends Seeder
             'name' => 'テストユーザー（確認用）',
             'email' => 'test@example.com',
         ]);
-
+        \App\Models\User::factory()->create([
+            'name' => 'テストユーザー（出品なし確認用）',
+            'email' => 'no-product@example.com',
+        ]);
         \App\Models\User::factory(9)->create();
         $this->call([
             ConditionsTableSeeder::class,

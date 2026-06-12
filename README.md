@@ -25,6 +25,22 @@ php artisan key:generate
 php artisan migrate
 php artisan db:seed
 ```
+# 管理者ユーザーログイン方法
+* Name
+テストユーザー(確認用)
+* Email
+test@example.com
+* Password
+password
+
+# 一般ユーザーログイン方法
+* Name
+テストユーザー(出品なし確認用)
+* Email
+no-product@example.com
+* Password
+password
+
 # 使用技術(実行環境)
 * php 8.1.34
 * laravel 8.83.8
