@@ -47,7 +47,7 @@ password
 * mysql 11.8.3
 
 # ER図
-![alt text](image.png)
+![alt text](<スクリーンショット 2026-06-13 090305.png>)
 
 # URL
 * 商品一覧画面
